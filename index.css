@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    width: 150px;
+    height: 200px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.card-container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px powderblue;
+    margin: auto;
+}
+
+.thecard{
+   width: 150px;
+   height: 200px;
+   position: relative;
+   border: 2px solid red;
+   margin: 10px;
+   transform-style: preserve-3d;
+   transition: transform .2s;
+}
+
+
+.thecard:hover{
+    transform: scale(1.2) rotateY(180deg);
+    transition: transform .3s ease .2s;   
+}
+
+.thefront,
+.theback{
+    position: absolute;
+    border: solid 2px black;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.thefront{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* .thecard:hover{
+    transform: rotateY(180deg);
+} */
+
+
+/* .thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: yellow;
+}
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: pink;
+} */ */
