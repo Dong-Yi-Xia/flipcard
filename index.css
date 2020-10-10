@@ -15,6 +15,62 @@ body{
 .card-container{
     width: 600px;
     height: 600px;
+    border: solid 2px powderblue;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thecard{
+   width: 150px;
+   height: 200px;
+   border: 2px solid red;
+   margin: 10px;
+   position: relative;
+   transform-style: preserve-3d;
+   transition: transform .2s;
+  
+}
+
+
+.thecard:hover{
+    transform: scale(1.2) rotateY(180deg);
+    transition: transform .3s ease .2s;   
+}
+
+.thefront,
+.theback{
+    border: solid 2px black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.thefront{
+    transform: rotateY(180deg);
+} 
+
+
+
+
+/* * {
+    box-sizing: border-box;
+}
+
+img{
+    width: 150px;
+    height: 200px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.card-container{
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     border: solid 2px powderblue;
@@ -48,7 +104,9 @@ body{
 
 .thefront{
     transform: rotateY(180deg);
-}
+} */
+
+
 
 
 
